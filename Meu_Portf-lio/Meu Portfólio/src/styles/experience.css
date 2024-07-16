@@ -1,0 +1,162 @@
+/* Reset de margens e preenchimentos */
+
+body {
+  background-color: #dfcbf1;
+  pointer-events: auto;
+  background-size: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flexbox;
+  background-color: rgb(219, 129, 242); /* Cor de fundo da faixa */
+  border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+  color: #2f4f4f; /* Cor do texto dentro da faixa */
+  width: 100%; /* Largura total */
+  padding: 10px 20px;
+}
+/* Estilos para o contêiner principal */
+.profile {
+  text-shadow: 2px 1px #d8c1f1; /*sombra no texto*/
+  text-align: center;
+}
+
+/* Estilos para a barra lateral */
+.hidden {
+  display: none;
+}
+
+.other-menu {
+  font-style: italic; /* Define o estilo da fonte como cursiva */
+}
+
+.other-menu h3 {
+  margin-top: 10px; /* Recuo à direita para posicionar quase no centro */
+  padding-left: 20px; /*adiciona espaçamento à direita p afastar da margem */
+  font-weight: 800;
+}
+.other-menu p {
+  margin-top: 10px; /* Recuo à direita para posicionar quase no centro */
+  padding-left: 50px; /*adiciona espaçamento à direita p afastar da margem */
+  align-items: justify;
+  line-height: 1.5;
+}
+.toggle-paragraph.active {
+  color: rgb(
+    79,
+    110,
+    120
+  ); /* Altera a cor do texto para vermelho quando o <h3> é clicado */
+  font-weight: bold; /* Altera o peso da fonte para negrito quando o título está ativo */
+}
+.toggle-paragraph {
+  cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre os títulos clicáveis */
+}
+.toggle-paragraph:hover {
+  color: rgb(
+    107,
+    107,
+    158
+  ); /* Altera a cor do texto para azul ao passar o mouse sobre o <h3> */
+}
+
+.toggle-paragraph::after {
+  content: " ►"; /* Adiciona uma setinha após o texto do <h3> */
+}
+
+/* Ou, se preferir, adicione margem inferior ao <ul> que envolve todos os itens <h3> */
+.other-menu ul {
+  margin-bottom: 10px; /* Adiciona margem inferior ao <ul> */
+}
+
+/* Estilos para o conteúdo principal */
+.submit-button {
+  padding: 5px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit {
+  width: 90px;
+  height: 90px;
+  border: none; /* Remove a borda do botão */
+  border-radius: 30%; /* Adiciona bordas arredondadas ao botão */
+  font-weight: 500;
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  outline: none;
+  font-size: 14px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+  background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+}
+.button-cv {
+  background-color: #7d98c7;
+  margin: 20px;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+}
+.button-cv a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-1 {
+  background-color: #9171ba;
+}
+
+.button-2 {
+  background-color: #71ba91;
+}
+.button-3 {
+  background-color: #91ba71;
+}
+.button-4 {
+  background-color: #ba9171;
+}
+.submit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adicione espaço entre os botões */
+.submit-button button + button {
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #d8c1f1;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  align-items: center; /* Centraliza os itens na horizontal */
+}
+
+.footer h5 {
+  margin-top: 10px; /* Adiciona um espaço acima do h5 */
+}
+
+@media only screen and (max-width: 400px) {
+  /* Estilos para telas pequenas aqui */
+  .profile h1 {
+    font-size: 18px; /* Reduz o tamanho do texto para telas pequenas */
+  }
+
+  .other-menu h3 {
+    margin-top: 10px; /* Reduz o espaçamento entre os títulos na barra lateral */
+  }
+
+  .other-menu p {
+    padding-left: 10%; /* Ajusta o recuo do parágrafo na barra lateral */
+  }
+
+  /* Ajuste outros estilos conforme necessário para telas pequenas */
+}
