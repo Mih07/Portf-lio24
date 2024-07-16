@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1612152916525-a569e78ed905?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  pointer-events: auto;
+  background-size: 100%;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+}
+header {
+  background-color: rgb(210, 8, 241); /* Cor de fundo da faixa */
+  border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+  color: #2f4f4f; /* Cor do texto dentro da faixa */
+  width: 100%; /* Largura total */
+  padding: 20px 40px;
+}
+.container {
+  text-align: center;
+}
+
+/* Estilos para o conteúdo principal */
+.submit-button {
+  padding: 5px;
+  display: flex;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit {
+  width: 90px;
+  height: 90px;
+  border: none; /* Remove a borda do botão */
+  border-radius: 30px; /* Adiciona bordas arredondadas ao botão */
+  font-weight: 500;
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  outline: none;
+  font-size: 14px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+  background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+  gap: 30px;
+}
+
+.button-1 {
+  background-color: #9171ba;
+}
+
+.button-2 {
+  background-color: #71ba91;
+}
+.button-3 {
+  background-color: #91ba71;
+}
+.button-4 {
+  background-color: #ba9171;
+}
+.submit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adicione espaço entre os botões */
+.submit-button button + button {
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #d8c1f1;
+}
+
+.principal {
+  text-align: justify;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+.principal h2 {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.footer {
+  background-color: #9171ba;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  align-items: center; /* Centraliza os itens na horizontal */
+}
+
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adiciona um espaço entre as imagens e o h5 */
+}
+.footer .social-icons a {
+  margin-right: 60px;
+}
+.footer h5 {
+  margin-top: 10px; /* Adiciona um espaço acima do h5 */
+}
