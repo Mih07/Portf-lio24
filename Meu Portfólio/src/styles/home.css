@@ -63,8 +63,8 @@ selection .messenger h3 {
 
 aside.sidebar img {
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 100%; /* Transforma o contêiner em um círculo */
   position: fixed; /* Posiciona o elemento de forma absoluta em relação ao elemento pai */

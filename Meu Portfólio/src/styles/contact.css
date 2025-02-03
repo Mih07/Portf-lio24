@@ -22,23 +22,38 @@ header {
 }
 
 /* Estilos para o contêiner principal */
+.messenger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100%; /* Garante que o contêiner ocupe toda a altura */
+}
+.messenger img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 10px;
+}
 .messenger h2 {
-  text-shadow: 3px 3px #9171ba;
+  text-shadow: 2px 2px #9171ba;
   font-style: italic; /* Define o estilo da fonte como cursiva */
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   z-index: 2; /* Garante que a barra lateral esteja na frente do botão */
   text-align: center;
   z-index: 1000; /* Garante que o rodapé esteja acima de outros elementos */
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* Estilos para a barra lateral */
 
 .sidebar {
   display: flex;
-  flex-direction: column; /* Altera o fluxo para uma coluna */
+  margin: 40px;
+  flex-direction: row;
   align-items: flex-start; /* Alinha os itens à esquerda */
+  justify-content: space-between;
   padding: 20px; /* Adiciona um espaço interno */
   font-style: italic; /* Define o estilo da fonte como cursiva */
   font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +61,8 @@ header {
 }
 .sidebar .social-icons {
   display: flex;
-  align-items: center;
+  gap: 20px;
+  width: 40%;
   flex-direction: column; /* Define a direção dos itens para uma coluna */
 }
 .sidebar .social-icons a {
@@ -112,6 +128,58 @@ header {
 }
 .submit:hover {
   background-color: #d8c1f1;
+}
+
+/* Estilos para o contêiner do formulário */
+
+.formulario {
+  display: flex;
+  flex-direction: column; /* Garante que os elementos do formulário sejam dispostos em uma coluna */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  max-width: 400px; /* Largura máxima do formulário */
+  margin: 20px; /* Centraliza o formulário horizontalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 55%;
+  margin: 40px;
+}
+
+/* Estilos para os títulos */
+.formulario h1 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  color: #151516; /* Cor do título */
+}
+
+.formulario label,
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Espaçamento inferior */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  box-sizing: border-box; /* Garante que padding e borda não afetem o tamanho total */
+}
+
+/* Estilos para o botão de enviar */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.formulario button[type="submit"] {
+  background-color: #8a3fda;
+  color: white; /* Cor do texto */
+  padding: 10px 30px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+.formulario button[type="submit"]:hover {
+  background-color: #b287e0;
 }
 
 .footer {

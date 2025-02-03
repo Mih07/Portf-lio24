@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // Cria o elemento de texto para o rodapé
   const text = document.createElement("h5");
-  text.textContent = "© 2024 por Michele Espirito Santo.";
+  text.textContent = "© 2024 Michele Front-end | frontendmichele.com";
 
   // Insere o texto do rodapé no final do elemento de rodapé existente
   const footer = document.querySelector(".footer");
